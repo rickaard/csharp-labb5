@@ -29,13 +29,11 @@ namespace Bounce
             if (easyCheckBox.Checked)
             {
                 Ball.easyWind = true;
-                Ball.AmountLeft = 5;
                 
             }
             else if (hardCheckBox.Checked)
             {
                 Ball.easyWind = false;
-                Ball.AmountLeft = 3;
                 
             }
             else

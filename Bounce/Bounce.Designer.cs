@@ -44,6 +44,7 @@
             this.pointsLabel = new System.Windows.Forms.Label();
             this.restartGameButton = new System.Windows.Forms.Button();
             this.panel = new System.Windows.Forms.Panel();
+            this.highscoreLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.gravityUpDown)).BeginInit();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.speedUpDown)).BeginInit();
@@ -198,12 +199,11 @@
             0,
             0,
             0});
-            this.speedUpDown.ValueChanged += new System.EventHandler(this.speedUpDown_ValueChanged);
             // 
             // pointsLabel
             // 
             this.pointsLabel.AutoSize = true;
-            this.pointsLabel.Location = new System.Drawing.Point(228, 33);
+            this.pointsLabel.Location = new System.Drawing.Point(157, 33);
             this.pointsLabel.Name = "pointsLabel";
             this.pointsLabel.Size = new System.Drawing.Size(41, 13);
             this.pointsLabel.TabIndex = 10;
@@ -232,11 +232,21 @@
             this.panel.Size = new System.Drawing.Size(612, 398);
             this.panel.TabIndex = 3;
             // 
+            // highscoreLabel
+            // 
+            this.highscoreLabel.AutoSize = true;
+            this.highscoreLabel.Location = new System.Drawing.Point(269, 33);
+            this.highscoreLabel.Name = "highscoreLabel";
+            this.highscoreLabel.Size = new System.Drawing.Size(112, 13);
+            this.highscoreLabel.TabIndex = 12;
+            this.highscoreLabel.Text = "Nuvarande highscore:";
+            // 
             // Bounce
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(637, 510);
+            this.Controls.Add(this.highscoreLabel);
             this.Controls.Add(this.restartGameButton);
             this.Controls.Add(this.pointsLabel);
             this.Controls.Add(this.speedUpDown);
@@ -279,6 +289,7 @@
         private System.Windows.Forms.NumericUpDown speedUpDown;
         private System.Windows.Forms.Label pointsLabel;
         private System.Windows.Forms.Button restartGameButton;
+        private System.Windows.Forms.Label highscoreLabel;
     }
 }
 

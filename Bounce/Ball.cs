@@ -8,10 +8,10 @@ namespace Bounce
 {
     class Ball : Label
     {
-        public static int AmountLeft { get; set; }
+        //public static int AmountLeft { get; set; }
         public static double gravity = 0;
         public static int collissions = 0;
-        public static double speedX, speedY;
+        public double speedX, speedY;
         public double posX, posY;
         public static bool easyWind;
 
@@ -21,11 +21,14 @@ namespace Bounce
             BackColor = Color.Transparent;
             Size = new Size(60, 60);
             Visible = true;
-            AmountLeft = 5;
+            
         }
 
         public double GetRandomWind()
         {
+            // Metod som slumpar fram ett tal som används som vind
+            // Beroende på svårighetsgrad så blir talet antingen mellan -2 och 2
+            // Eller -5 och 5
             int minimumWind;
             int maximumWind;
             if (easyWind)
